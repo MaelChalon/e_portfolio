@@ -1,5 +1,5 @@
-import 'package:e_porfolio/ui/screens/home.state.dart';
-import 'package:e_porfolio/ui/screens/home.viewmodel.dart';
+import 'package:e_porfolio/ui/screens/home/home.state.dart';
+import 'package:e_porfolio/ui/screens/home/home.viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

@@ -1,5 +1,5 @@
 import 'package:e_porfolio/application/injections/initializer.dart';
-import 'package:e_porfolio/ui/screens/home.screen.dart';
+import 'package:e_porfolio/ui/screens/home/home.screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
