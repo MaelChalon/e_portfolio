@@ -1,8 +1,7 @@
 name: e_porfolio
 description: "My E-Porfolio"
-# La ligne suivante empêche le package d'être accidentellement publié sur pub.dev en utilisant `flutter pub publish`.
-# C'est préférable pour les packages privés.
-publish_to: 'none' # Supprimez cette ligne si vous souhaitez publier sur pub.dev
+
+publish_to: 'none' 
 
 version: 1.0.0+1
 environment:
@@ -57,3 +56,9 @@ flutter:
   assets:
     - assets/records.json
     - images/
+    - images/ATLAS
+    - images/Billar
+    - images/Pokefight
+    - images/portfolio
+    - images/SAE-MOBILE
+    - images/SAE-WEB

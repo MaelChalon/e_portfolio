@@ -57,12 +57,6 @@ class ListItem extends StatelessWidget {
             width: 100,
             height: 100,
             fit: BoxFit.scaleDown,
-            errorBuilder: (context, error, stackTrace) {
-              return Image.asset(
-                "images/404-not-found.gif",
-                fit: BoxFit.cover,
-              );
-            }
           ),
         ),
         title: Text(
