@@ -1,108 +1,127 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:open_app_file/open_app_file.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class PresentationScreen extends ConsumerStatefulWidget {
   const PresentationScreen({super.key});
 
   @override
-  ConsumerState<PresentationScreen> createState() => _PresentationScreeenState();
+  ConsumerState<PresentationScreen> createState() => _PresentationScreenState();
 }
 
-class _PresentationScreeenState extends ConsumerState<PresentationScreen> {
+class _PresentationScreenState extends ConsumerState<PresentationScreen> {
+
   final String name = "Mael CHALON";
   final String dateOfBirth = "27 décembre 2003";
   final String email = "mael.chalon@outlook.fr";
   final String phoneNumber = "+33783901119";
+  final String linkedInUrl = "https://www.linkedin.com/in/mael-chalon/";
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Mon CV'),
+      ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            const Text(
-              'Informations personnelles',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Card(
+                elevation: 5,
+                child: ListTile(
+                  title: const Text(
+                    'Nom',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  subtitle: Text(name),
+                ),
               ),
-            ),
-            const SizedBox(height: 20),
-            _buildInfoRow('Nom', name),
-            _buildInfoRow('Date de naissance', dateOfBirth),
-            _buildInfoRow('Email', email),
-            _buildInfoRow('Téléphone', phoneNumber),
-            const SizedBox(height: 40),
-            ElevatedButton(
-              onPressed: () {
-                _launchPDF(context);
-              },
-              child: const Text('Télécharger mon CV'),
-            ),
-          ],
+              Card(
+                elevation: 5,
+                child: ListTile(
+                  title: const Text(
+                    'Date de naissance',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  subtitle: Text(dateOfBirth),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                child: ListTile(
+                  title: const Text(
+                    'Email',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  subtitle: InkWell(
+                    onTap: () {
+                      _launchEmail(email);
+                    },
+                    child: Text(
+                      email,
+                      style: const TextStyle(
+                        fontSize: 18,
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                child: ListTile(
+                  title: const Text(
+                    'Téléphone',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  subtitle: Text(phoneNumber),
+                ),
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () => _openPDF(),
+                child: Text('Télécharger mon CV'),
+              ),
+              SizedBox(height: 20),
+              GestureDetector(
+                onTap: () async {
+                  _launchUrl(linkedInUrl);
+                },
+                child: Image.asset(
+                  'images/linkedin.png',
+                  width: 50,
+                  height: 50,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 
-  Widget _buildInfoRow(String label, String value) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 32),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            label,
-            style: const TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          Text(
-            value,
-            style: const TextStyle(
-              fontSize: 18,
-            ),
-          ),
-        ],
-      ),
-    );
+  void _openPDF() {
+    OpenAppFile.open('/images/Mael_CHALON.pdf');
   }
 
-  Future<void> _launchPDF(BuildContext context) async {
-    try {
-      final ByteData bytes = await rootBundle.load('images/Mael_CHALON.pdf'); // Chemin vers votre fichier PDF dans les actifs
-      final Uint8List pdf = bytes.buffer.asUint8List();
+  void _launchUrl(String url) async {
+    final Uri _url = Uri.parse(url);
+    launchUrl(_url);
+  }
 
-      final tempDir = await getTemporaryDirectory();
-      final tempPath = tempDir.path;
-      final file = File('$tempPath/mon_cv.pdf');
-      await file.writeAsBytes(pdf);
-      final url = file.path;
-
-      if (await canLaunch(url)) {
-        await launch(url);
-      } else {
-        throw 'Impossible de lancer $url';
-      }
-    } on PlatformException catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Erreur: ${e.message}'),
-        ),
-      );
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Erreur inattendue: $e'),
-        ),
-      );
+  void _launchEmail(String emailAddress) async {
+    final Uri emailLaunchUri = Uri(
+      scheme: 'mailto',
+      path: emailAddress,
+    );
+    if (!await launchUrl(emailLaunchUri)) {
+      throw Exception('Could not launch $emailLaunchUri');
     }
   }
 }

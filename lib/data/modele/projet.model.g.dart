@@ -13,6 +13,7 @@ ProjetModel _$ProjetModelFromJson(Map<String, dynamic> json) => ProjetModel(
       json['date'] as String,
       json['url'] as String,
       json['image'] as String,
+      json['categorie'] as String,
     );
 
 Map<String, dynamic> _$ProjetModelToJson(ProjetModel instance) =>
@@ -23,4 +24,5 @@ Map<String, dynamic> _$ProjetModelToJson(ProjetModel instance) =>
       'date': instance.date,
       'url': instance.url,
       'image': instance.image,
+      'categorie': instance.categorie,
     };

@@ -7,7 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 ///
 final StateNotifierProvider<DetailViewModel, DetailState> detailProvider =
     StateNotifierProvider<DetailViewModel, DetailState>(
-  (StateNotifierProviderRef<DetailViewModel, DetailState> ref) => DetailViewModel(ProjetEntity(0, "nom", "dscription", "date", "url", "image")),
+  (StateNotifierProviderRef<DetailViewModel, DetailState> ref) => DetailViewModel(ProjetEntity(0, "nom", "dscription", "date", "url", "image", "categorie")),
 );
 
 class DetailViewModel extends ViewModelAbs<DetailViewModel, DetailState> {

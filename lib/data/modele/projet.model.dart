@@ -11,8 +11,9 @@ class ProjetModel {
   final String date;
   final String url;
   final String image;
+  final String categorie;
 
-  const ProjetModel(this.id, this.name, this.description, this.date, this.url, this.image);
+  const ProjetModel(this.id, this.name, this.description, this.date, this.url, this.image, this.categorie);
 
   factory ProjetModel.fromJson(Map<String, dynamic> json) =>
       _$ProjetModelFromJson(json);
@@ -25,6 +26,7 @@ class ProjetModel {
       description,
       date,
       url,
-      image
+      image,
+      categorie
     );
 }

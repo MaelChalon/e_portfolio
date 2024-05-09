@@ -47,16 +47,16 @@ class ListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 3, // Ajoute une légère ombre à la carte
-      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16), // Marge autour de chaque carte
+      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16), 
       child: ListTile(
         contentPadding: const EdgeInsets.all(16),
         leading: ClipRRect(
           borderRadius: BorderRadius.circular(8),
           child: Image.network(
-            "https://media.tenor.com/PPOe9MawAvsAAAAS/404-not-found.gif",
+            "images/${projet.image}.png",
             width: 100,
             height: 100,
-            fit: BoxFit.cover,
+            fit: BoxFit.scaleDown,
             errorBuilder: (context, error, stackTrace) {
               return Image.asset(
                 "images/404-not-found.gif",

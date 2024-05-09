@@ -3,27 +3,57 @@
     [
         {
             "id": 1,
-            "name": "SAE: Suivie d'apprentissage et d'evaluation",
-            "description" : "blablabla",
+            "name": "SAE: Suivie d'apprentissage et d'evaluation WEB",
+            "description" : "Le projet SAE, qui se compose d'une application Android et d'un site web avec une base de données et une API, permet de gérer le suivi des notations des compétences pour les intervenants en IME (Institut Médico-Éducatif). Dans le cadre de ce projet, j'ai travaillé avec 3 camarades. Nous étions en relation avec l'IME Henri Lafay de Bourg-en-Bresse. Personnellement, j'ai principalement travaillé sur la partie application mobile et sur l'API de notre projet.",
             "date" : "2022-2023",
-            "url" : "on verra plus tard",
-            "image" : "SAE"
+            "url" : "https://github.com/MaelChalon/SAE-Web.git",
+            "image" : "SAE-WEB",
+            "categorie" : "IUT"
         },
         {
             "id": 2,
-            "name": "BillA.R.",
-            "description" : "bliblibli",
-            "date" : "2023-2024",
-            "url" : "on vera encore plus tard",
-            "image" : "Billar"
+            "name": "SAE: Suivie d'apprentissage et d'evaluation MOBILE",
+            "description" : "Le projet SAE, qui se compose d'une application Android et d'un site web avec une base de données et une API, permet de gérer le suivi des notations des compétences pour les intervenants en IME (Institut Médico-Éducatif). Dans le cadre de ce projet, j'ai travaillé avec 3 camarades. Nous étions en relation avec l'IME Henri Lafay de Bourg-en-Bresse. Personnellement, j'ai principalement travaillé sur la partie application mobile et sur l'API de notre projet.",
+            "date" : "2022-2023",
+            "url" : "https://github.com/MaelChalon/SAE-mobile.git",
+            "image" : "SAE-MOBILE",
+            "categorie" : "IUT"
         },
         {
             "id": 3,
-            "name": "Pokefight",
-            "description" : "blublublu",
+            "name": "BillA.R.",
+            "description" : "Le projet billA.R, est un système d'assistance pour le célèbre jeu du billard. Il permet la détection des billes et des queues, afin de créer et d'afficher la trajectoire pour aider le joueur à réaliser son coup. Pour ce projet, j'ai travaillé en collaboration avec 3 camarades. Nous avons fait le choix d'utiliser Python comme langage de programmation. Personnellement, j'ai principalement travaillé sur la réalisation de l'intelligence artificiel permettant la détection des boules et cannes et sur la calibration de la caméra avec le projecteur.",
             "date" : "2023-2024",
-            "url" : "on vera vraiment plus tard",
-            "image" : "Pokefight"
+            "url" : "https://github.com/MaelChalon/BillA.R..git",
+            "image" : "Billar",
+            "categorie" : "IUT"
+        },
+        {
+            "id": 4,
+            "name": "Pokefight",
+            "description" : "Pokefight est un projet scolaire passionnant conçu pour améliorer votre expérience Pokémon en vous permettant de collecter des Pokémon, de gérer une équipe, de participer à des combats, et même d'échanger des Pokemon. J'ai réalisé cette application mobile en collaboration avec 2 camarades. Personnellement, je me suis concentré sur la partie boutique, de la gestion des utilisateurs et de la page d'accueil de l'application.",
+            "date" : "2023-2024",
+            "url" : "https://github.com/MaelChalon/pokefight.git",
+            "image" : "Pokefight",
+            "categorie" : "IUT"
+        },
+        {
+            "id": 5,
+            "name": "E-Portfolio",
+            "description": "Ce projet est mon E-portfolio. Je maintiens cette application Web depuis 2024. J'ai réalisé ce projet en autonomie dans le langage flutter. J'ajoute régulièrement mes projets sur le site.",
+            "date": "2023-2024",
+            "url": "https://github.com/MaelChalon/e_portfolio.git",
+            "image": "portfolio",
+            "categorie" : "Personnel"
+        },
+        {
+            "id": 6,
+            "name": "ATLAS",
+            "description": "Le projet ATLAS est un projet auquel j'ai participé dans l'entreprise Téréva - Martin Belaysoud. Il s'agissait d'un projet de modernisation de l'ERP interne du groupe. L'objectif était de transformer les interfaces réalisées en IBM-i (écran noir et vert) vers des écrans Web moderne. Le projet se découpait en 3 grandes partie, Frontend, Middle et Backend. J'ai intégré une équipe de développeurs Backend. Mes taches étaient de réaliser des webservices en RPG 4 (langage natif d'IBM-i).",
+            "date": "2022-2024",
+            "url": "",
+            "image": "ATLAS",
+            "categorie" : "Entreprise"
         }
     ]   
 }
