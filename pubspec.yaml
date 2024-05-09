@@ -56,9 +56,9 @@ flutter:
   assets:
     - assets/records.json
     - images/
-    - images/ATLAS
-    - images/Billar
-    - images/Pokefight
-    - images/portfolio
-    - images/SAE-MOBILE
-    - images/SAE-WEB
+    - images/ATLAS/
+    - images/Billar/
+    - images/Pokefight/
+    - images/portfolio/
+    - images/SAE-MOBILE/
+    - images/SAE-WEB/
