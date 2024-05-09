@@ -52,11 +52,17 @@ class ListItem extends StatelessWidget {
         contentPadding: const EdgeInsets.all(16),
         leading: ClipRRect(
           borderRadius: BorderRadius.circular(8),
-          child: Image.network(
+          child: Image.asset(
             "images/${projet.image}.png",
             width: 100,
             height: 100,
             fit: BoxFit.scaleDown,
+            errorBuilder: (context, error, stackTrace) {
+              return Image.asset(
+                "images/404-not-found.gif",
+                fit: BoxFit.cover,
+              );
+            }
           ),
         ),
         title: Text(

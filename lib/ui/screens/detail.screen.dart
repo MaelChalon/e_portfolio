@@ -33,7 +33,7 @@ class DetailScreen extends StatelessWidget {
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(8),
-                          child: Image.network(
+                          child: Image.asset(
                             "images/${projet.image}.png",
                             width: 64, // You can adjust this size as needed
                             height: 64, // You can adjust this size as needed
@@ -72,7 +72,7 @@ class DetailScreen extends StatelessWidget {
                     const SizedBox(height: 16),
                     CarouselSlider(
                       items: [
-                        Image.network(
+                        Image.asset(
                           "images/${projet.image}/Image1.png",
                           errorBuilder: (context, error, stackTrace) {
                               return Image.asset(
@@ -80,7 +80,7 @@ class DetailScreen extends StatelessWidget {
                               );
                             }
                           ),
-                        Image.network(
+                        Image.asset(
                           "images/${projet.image}/Image2.png",
                           errorBuilder: (context, error, stackTrace) {
                               return Image.asset(
@@ -88,7 +88,7 @@ class DetailScreen extends StatelessWidget {
                               );
                             }
                           ),
-                        Image.network(
+                        Image.asset(
                           "images/${projet.image}/Image3.png",
                           errorBuilder: (context, error, stackTrace) {
                               return Image.asset(
@@ -96,7 +96,7 @@ class DetailScreen extends StatelessWidget {
                               );
                             }
                           ),
-                        Image.network(
+                        Image.asset(
                           "images/${projet.image}/Image4.png",
                           errorBuilder: (context, error, stackTrace) {
                               return Image.asset(

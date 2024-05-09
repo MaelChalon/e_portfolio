@@ -55,7 +55,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/records.json
-    - images/
     - images/ATLAS/
     - images/Billar/
     - images/Pokefight/
