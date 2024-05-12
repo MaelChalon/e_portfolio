@@ -22,7 +22,7 @@
         {
             "id": 3,
             "name": "BillA.R.",
-            "description" : "Le projet billA.R, est un système d'assistance pour le célèbre jeu du billard. Il permet la détection des billes et des queues, afin de créer et d'afficher la trajectoire pour aider le joueur à réaliser son coup. Pour ce projet, j'ai travaillé en collaboration avec 3 camarades. Nous avons fait le choix d'utiliser Python comme langage de programmation. Personnellement, j'ai principalement travaillé sur la réalisation de l'intelligence artificiel permettant la détection des boules et cannes et sur la calibration de la caméra avec le projecteur.",
+            "description" : "Le projet billA.R, est un système d'assistance pour le célèbre jeu du billard. Il permet la détection des billes et des queues, afin de créer et d'afficher la trajectoire pour aider le joueur à réaliser son coup. Pour ce projet, j'ai travaillé en collaboration avec 3 camarades. Nous avons fait le choix d'utiliser Python comme langage de programmation. Personnellement, j'ai principalement travaillé sur la réalisation de l'intelligence artificielle permettant de detecter des boules et cannes. J'ai également travaillé sur la calibration de la caméra avec le projecteur.",
             "date" : "2023-2024",
             "url" : "https://github.com/MaelChalon/BillA.R..git",
             "image" : "Billar",
@@ -49,7 +49,7 @@
         {
             "id": 6,
             "name": "ATLAS",
-            "description": "Le projet ATLAS est un projet auquel j'ai participé dans l'entreprise Téréva - Martin Belaysoud. Il s'agissait d'un projet de modernisation de l'ERP interne du groupe. L'objectif était de transformer les interfaces réalisées en IBM-i (écran noir et vert) vers des écrans Web moderne. Le projet se découpait en 3 grandes partie, Frontend, Middle et Backend. J'ai intégré une équipe de développeurs Backend. Mes taches étaient de réaliser des webservices en RPG 4 (langage natif d'IBM-i).",
+            "description": "Le projet ATLAS est un projet auquel j'ai participé dans l'entreprise Téréva - Martin Belaysoud. Il s'agissait d'un projet de modernisation de l'ERP interne du groupe. L'objectif était de transformer les interfaces réalisées en IBM-i (écran noir et vert) vers des écrans Web moderne. Le projet se découpait en 3 grandes partie, Frontend, Middle et Backend. J'ai intégré une équipe de développeurs Backend. Mes tâches étaient de réaliser des webservices en RPG 4 (langage natif d'IBM-i).",
             "date": "2022-2024",
             "url": "",
             "image": "ATLAS",

@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:open_app_file/open_app_file.dart';
@@ -107,7 +108,14 @@ class _PresentationScreenState extends ConsumerState<PresentationScreen> {
   }
 
   void _openPDF() {
-    OpenAppFile.open('/images/Mael_CHALON.pdf');
+
+    if (kDebugMode){
+      OpenAppFile.open('images/Mael_CHALON.pdf'); 
+    }
+    else{
+      OpenAppFile.open('assets/images/Mael_CHALON.pdf');
+    }
+    
   }
 
   void _launchUrl(String url) async {
