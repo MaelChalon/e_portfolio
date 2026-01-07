@@ -145,6 +145,10 @@ class DetailScreen extends StatelessWidget {
         iconData = Icons.school;
         chipColor = Colors.blue;
         break;
+      case "CPE":
+        iconData = Icons.school;
+        chipColor = Colors.blue;
+        break;
       case "Entreprise":
         iconData = Icons.business;
         chipColor = Colors.green;
