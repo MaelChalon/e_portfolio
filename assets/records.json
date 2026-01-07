@@ -58,7 +58,7 @@
         {
             "id": 7,
             "name": "ChessBot",
-            "description": "ChessBot est un projet personnel de type Proof of Concept dédié à l’exploration de l’intelligence artificielle appliquée au jeu d’échecs. À travers ce projet, je me lance un double défi : concevoir un jeu d’échecs entièrement fonctionnel, puis aller plus loin en développant une intelligence artificielle capable de jouer, analyser et prendre des décisions stratégiques. ChessBot est essentiellement réalisé en Python."
+            "description": "ChessBot est un projet personnel de type Proof of Concept dédié à l’exploration de l’intelligence artificielle appliquée au jeu d’échecs. À travers ce projet, je me lance un double défi : concevoir un jeu d’échecs entièrement fonctionnel, puis aller plus loin en développant une intelligence artificielle capable de jouer, analyser et prendre des décisions stratégiques. ChessBot est essentiellement réalisé en Python.",
             "date": "2025-Now",
             "url": "https://github.com/MaelChalon/ChessBot.git",
             "image": "ChessBot",
@@ -67,7 +67,7 @@
         {
             "id": 8,
             "name": "SDMIS-FAA",
-            "description": "Le projet consiste à développer un système intégré de gestion et de suivi des incidents pour le SDMIS de Lyon, permettant de superviser en temps quasi réel les incidents, les interventions et les ressources mobilisées. Il s’appuie sur une application QG pour la prise de décision et la coordination, une application terrain pour la remontée d’informations et la géolocalisation des équipes, ainsi qu’un simulateur reproduisant incidents et déplacements de véhicules. Le système doit proposer une affectation optimisée des ressources, tout en laissant la décision finale à l’opérateur humain. L’ensemble repose sur une architecture modulaire, sécurisée et testable, intégrant des communications IoT, une CI/CD et des exigences fortes de qualité logicielle."
+            "description": "Le projet consiste à développer un système intégré de gestion et de suivi des incidents pour le SDMIS de Lyon, permettant de superviser en temps quasi réel les incidents, les interventions et les ressources mobilisées. Il s’appuie sur une application QG pour la prise de décision et la coordination, une application terrain pour la remontée d’informations et la géolocalisation des équipes, ainsi qu’un simulateur reproduisant incidents et déplacements de véhicules. Le système doit proposer une affectation optimisée des ressources, tout en laissant la décision finale à l’opérateur humain. L’ensemble repose sur une architecture modulaire, sécurisée et testable, intégrant des communications IoT, une CI/CD et des exigences fortes de qualité logicielle.",
             "date": "2025-Now",
             "url": "",
             "image": "SDMIS",
